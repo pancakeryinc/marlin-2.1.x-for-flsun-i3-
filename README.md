@@ -43,6 +43,24 @@ and
 #define INVERT_E0_DIR false
 ```
 and Bob's your uncle.
+If you need to adapt this firmware to standart i3, change:
+```C++ core
+#define X_BED_SIZE 300
+#define Y_BED_SIZE 300
+```
+and
+```C++ core
+#define Z_MAX_POS 400
+```
+to
+```C++ core
+#define X_BED_SIZE 200
+#define Y_BED_SIZE 200
+```
+and
+```C++ core
+#define Z_MAX_POS 220
+```
 
 If you want to change my totally awesome printer name, than go and change:
 ```C++ core
@@ -50,6 +68,12 @@ If you want to change my totally awesome printer name, than go and change:
 ```
 to any boring thing your heart desires.
 
-If you like to do so, you can buy me a cup of tea: paypal.me/pancakery
+PLEASE KEEP IN MIND THAT MY PRINTER'S PROBE OFFSET WILL DIFFER FROM YOURS. 
+```C++ core
+#define NOZZLE_TO_PROBE_OFFSET { -28, -1, 0 }
+```
+You'll probably will need to measure your probe offset to be sure that bed homing works correctly.
+
+If your heart desires, you can buy me a cup of tea: paypal.me/pancakery
 
 Wish you all great first layers!
