@@ -4,9 +4,9 @@ Created to make linear advance work with standalone TMC2208 without UART. Based 
 If you are using basic drivers than change:
 
 ```C++ core
-#define X_DRIVER_TYPE  TMC2208_STANDALONE
-#define Y_DRIVER_TYPE  TMC2208_STANDALONE
-#define Z_DRIVER_TYPE  TMC2208_STANDALONE
+#define X_DRIVER_TYPE TMC2208_STANDALONE
+#define Y_DRIVER_TYPE TMC2208_STANDALONE
+#define Z_DRIVER_TYPE TMC2208_STANDALONE
 ```
 and
 ```C++ core
@@ -14,9 +14,9 @@ and
 ```
 to
 ```C++ core
-#define X_DRIVER_TYPE  A4988
-#define Y_DRIVER_TYPE  A4988
-#define Z_DRIVER_TYPE  A4988
+#define X_DRIVER_TYPE A4988
+#define Y_DRIVER_TYPE A4988
+#define Z_DRIVER_TYPE A4988
 ```
 and
 ```C++ core
@@ -44,8 +44,12 @@ and
 ```
 and Bob's your uncle.
 
-If you want to change my totally awesome printer name, than go to:
+If you want to change my totally awesome printer name, than go and change:
 ```C++ core
 #define CUSTOM_MACHINE_NAME "Pancaker i3+"
 ```
-and write any boring thing your heart desires.
+to any boring thing your heart desires.
+
+If you like to do so, you can buy me a cup of tea: paypal.me/pancakery
+
+Wish you all great first layers!
